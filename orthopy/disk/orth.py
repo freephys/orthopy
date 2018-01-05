@@ -77,7 +77,7 @@ def tree(n, X, mu=None, symbolic=False):
     pi = sympy.pi if symbolic else numpy.pi
 
     if mu is None:
-        mu = frac(1, 2)
+        mu = frac(1, 2) if symbolic else 0.5
 
     p0 = 1 / sqrt(pi)
 

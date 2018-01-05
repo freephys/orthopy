@@ -251,8 +251,13 @@ All polynomials are normalized on the quadrilateral.
 
 <img src="https://nschloe.github.io/orthopy/disk.png" width="25%">
 
+Orthogonal polynomials with the weight function
+```
+W_mu(x, y) = (mu + 1/2) (1 - x^2 - y^2)^(mu-1/2)
+```
+(`mu=0.5` is the default.)
 ```python
-vals = orthopy.disk.tree(4, x, symbolic=False)
+vals = orthopy.disk.tree(4, x, mu=0.5, symbolic=False)
 ```
 All polynomials are normalized on the unit disk.
 
